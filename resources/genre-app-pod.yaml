@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: genre-app-api
+  labels:
+    name: genre-app-api
+    tier: api
+spec:
+  containers:
+  - name: genre-app
+    image: funbi/genre-app
+    resources:
+      limits:
+        memory: "128Mi"
+        cpu: "500m"
+    ports:
+      - containerPort: 80

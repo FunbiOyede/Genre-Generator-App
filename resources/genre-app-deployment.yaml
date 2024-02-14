@@ -1,0 +1,30 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: genre-app-deployment
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      name: genre-app-api
+      tier: api
+  template:
+    metadata:
+      name: genre-app-api
+      labels:
+        name: genre-app-api
+        tier: api
+    spec:
+      containers:
+      - name: genre-app
+        image: funbi/genre-app
+        resources:
+          limits:
+            memory: "128Mi"
+            cpu: "500m"
+        ports:
+          - containerPort: 80
+        env:
+          - name: "ASPNETCORE_ENVIRONMENT"
+            value: "Production"
+
