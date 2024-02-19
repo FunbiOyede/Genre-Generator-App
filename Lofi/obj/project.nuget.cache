@@ -1,9 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "lRnRQethHaGD63jx9ia6qyn8uuRzekaUAdVvwjjYuhSj71DcVXVdFiueER7aewiAfvjb+yRPyGAgiXJWEskmSA==",
+  "dgSpecHash": "bXJItVwT5Ki+5jgjO1a9BiTBCG33bpPd4XIH3l5MP6+P22SHsONOWv3qOwW1hITlRtqAv36TcpiIR5ZWnbEabw==",
   "success": true,
   "projectFilePath": "/Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/Lofi.csproj",
   "expectedPackageFiles": [
+    "/Users/samsonoyede/.nuget/packages/htmlagilitypack/1.11.59/htmlagilitypack.1.11.59.nupkg.sha512",
+    "/Users/samsonoyede/.nuget/packages/htmlagilitypack.cssselectors/1.0.2/htmlagilitypack.cssselectors.1.0.2.nupkg.sha512",
     "/Users/samsonoyede/.nuget/packages/microsoft.aspnetcore.openapi/7.0.14/microsoft.aspnetcore.openapi.7.0.14.nupkg.sha512",
     "/Users/samsonoyede/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/samsonoyede/.nuget/packages/microsoft.openapi/1.4.3/microsoft.openapi.1.4.3.nupkg.sha512",
@@ -12,5 +14,16 @@
     "/Users/samsonoyede/.nuget/packages/swashbuckle.aspnetcore.swaggergen/6.5.0/swashbuckle.aspnetcore.swaggergen.6.5.0.nupkg.sha512",
     "/Users/samsonoyede/.nuget/packages/swashbuckle.aspnetcore.swaggerui/6.5.0/swashbuckle.aspnetcore.swaggerui.6.5.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'HtmlAgilityPack.CssSelectors 1.0.2' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net7.0'. This package may not be fully compatible with your project.",
+      "libraryId": "HtmlAgilityPack.CssSelectors",
+      "targetGraphs": [
+        "net7.0"
+      ]
+    }
+  ]
 }

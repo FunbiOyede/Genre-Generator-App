@@ -5,6 +5,8 @@
 /Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/Lofi.runtimeconfig.json
 /Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/Lofi.dll
 /Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/Lofi.pdb
+/Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/HtmlAgilityPack.dll
+/Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/HtmlAgilityPack.CssSelectors.dll
 /Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/Microsoft.AspNetCore.OpenApi.dll
 /Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/Microsoft.OpenApi.dll
 /Users/samsonoyede/Documents/K8 /lofi-songs/Lofi/bin/Debug/net7.0/Swashbuckle.AspNetCore.Swagger.dll
