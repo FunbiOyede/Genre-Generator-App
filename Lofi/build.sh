@@ -27,9 +27,11 @@ kill_container() {
     # checks running container
     container_id=$(docker ps -aq --filter "name=${CONTAINER_NAME}")
 
+    echo "Container ID is ${container_id}"
+
     if [[ -n "${container_id}" ]]; then
-        # docker kill ${current_container}
-        # echo "Container Port -  ${CONTAINER_PORT} is stopped"
+        docker kill ${container_id}
+        echo "Container Port -  ${CONTAINER_PORT} is stopped"
         docker rm ${container_id}
         echo "Container - ${container_id} is deleted"
     else

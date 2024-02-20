@@ -23,7 +23,7 @@ public class GenreController : ControllerBase
     {
         _logger.LogInformation("Generating genre's...");
 
-        var document= engine.configureEngine("https://www.musicgenreslist.com/");
+        var document= engine.configureEngine("https://www.musicgenreslist.com:443");
         var listOfGenres = engine.QueryData(document);
 
         return Ok(listOfGenres);
