@@ -1,6 +1,6 @@
 apiVersion: v2
 name: lofi-charts
-description: A Helm chart for Kubernetes
+description: A Helm chart for .NET application
 
 # A chart can be either an 'application' or a 'library' chart.
 #

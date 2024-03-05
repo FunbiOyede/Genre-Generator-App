@@ -230,7 +230,7 @@ bin/
 obj/
 packages
 ../.DS_Store
-
+.DS_Store
 #####
 # End of core ignore list, below put you custom 'per project' settings (patterns or path)
 #####
