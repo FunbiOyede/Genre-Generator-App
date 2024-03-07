@@ -21,6 +21,9 @@ spec:
         - name: {{ .Values.container.name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
+          env:
+            - name: {{ .Values.env.name }}
+              value: {{ .Values.env.value }}
           ports:
             - name: http
               containerPort: {{ .Values.service.port }}
