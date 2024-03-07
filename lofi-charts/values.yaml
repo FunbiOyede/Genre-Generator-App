@@ -25,8 +25,10 @@ podLabels: {}
 
 
 service:
-  type: ClusterIP
+  type: NodePort
   port: 80
+  name: genre-app-service
+  nodePort: 80
 
 labels:
   name: genre-app-api
