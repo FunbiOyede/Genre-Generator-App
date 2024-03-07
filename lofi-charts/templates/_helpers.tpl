@@ -60,3 +60,12 @@ Create the name of the service account to use
 {{- default "default" .Values.serviceAccount.name }}
 {{- end }}
 {{- end }}
+
+
+{{/*
+For creating custom labels
+*/}}
+{{- define "lofi-charts.customLabels" -}}
+name: {{ .Values.labels.name }}
+tier: {{ .Values.labels.tier }}
+{{- end }}
