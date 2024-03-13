@@ -1,4 +1,4 @@
-# Default values for chart.
+# Default values for genre-charts.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
 
@@ -42,6 +42,7 @@ securityContext: {}
 service:
   type: ClusterIP
   port: 80
+  name: genre-app-service
 
 ingress:
   enabled: false
