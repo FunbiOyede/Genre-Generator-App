@@ -76,3 +76,11 @@ Custom labels
 name: {{ .Values.app.name }}
 tier: {{ .Values.app.tier }}
 {{- end }}
+
+
+{{/*
+Deployment labels
+*/}}
+{{- define "genre-charts.deploymentLabels" -}}
+name: {{ .Values.deploymentInfo.name }}
+{{- end }}
