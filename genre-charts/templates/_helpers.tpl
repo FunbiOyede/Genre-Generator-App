@@ -62,8 +62,17 @@ Create the name of the service account to use
 {{- end }}
 
 {{/*
-Selector labels
+Service labels
 */}}
 {{- define "genre-charts.serviceName" -}}
 name: {{ .Values.service.name }}
+{{- end }}
+
+
+{{/*
+Custom labels
+*/}}
+{{- define "genre-charts.customLabels" -}}
+name: {{ .Values.app.name }}
+tier: {{ .Values.app.tier }}
 {{- end }}
