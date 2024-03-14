@@ -2,9 +2,8 @@
 
 namespace Lofi.Controllers;
 
-[ApiController]
-[Route("[controller]")]
-public class GenreController : ControllerBase
+[Route("api/[controller]")]
+public class GenreController : Controller
 {
     // private static readonly string[] listOfGenres = new[]
     // {
@@ -18,7 +17,7 @@ public class GenreController : ControllerBase
         _logger = logger;
     }
 
-    [HttpGet(Name = "Get Genre")]
+    [HttpGet("/genre")]
     public IActionResult Get()
     {
         _logger.LogInformation("Generating genre's...");

@@ -10,7 +10,7 @@ image:
   containername: genre-app
   
   # Overrides the image tag whose default is the chart appVersion.
-  tag: latest
+  tag: 1.1.0
 
 imagePullSecrets: []
 nameOverride: ""
