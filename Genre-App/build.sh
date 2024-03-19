@@ -35,14 +35,14 @@ kill_container() {
         docker rm ${container_id}
         echo "Container - ${container_id} is deleted"
     else
-        echo "Container Port - ${CONTAINER_PORT} not running"
+        echo "No containers are running on Port - ${CONTAINER_PORT}"
     fi
 
 }
 
 start_container() {
 
-    echo "Starting docker container...."
+    echo "Starting new docker container...."
 
     CONTAINER_ID=$(docker run -d -p ${HOST_PORT}:${CONTAINER_PORT} -e ASPNETCORE_ENVIRONMENT=${ENV} --name ${CONTAINER_NAME} ${IMAGE_NAME})
     container_status=$(docker container inspect -f '{{.State.Status}}' ${CONTAINER_ID})

@@ -5,11 +5,10 @@ metadata:
   labels:
     {{- include "genre-charts.labels" . | nindent 4 }}
 spec:
-  type: {{ .Values.service.type }}
+  type: {{ .Values.cloudService.type }}
   ports:
-    - port: {{ .Values.service.port }}
-      targetPort: {{ .Values.service.targetPort }}
-      nodePort: {{ .Values.service.nodePort }}
+    - port: {{ .Values.cloudService.port }}
+      targetPort: {{ .Values.cloudService.targetPort }}
       name: http
   selector:
     {{- include "genre-charts.customLabels" . | nindent 4 }}
